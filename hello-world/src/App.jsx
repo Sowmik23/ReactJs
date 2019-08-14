@@ -33,6 +33,12 @@ import Hero from './components/Hero';
 import ErrorBoundary from './components/ErrorBoundary';
 import ClickCounter from './components/ClickCounter';
 import HoverCounter from './components/HoverCounter';
+import ClickCounterTwo from './components/ClickCounterTwo';
+import HoverCounterTwo from './components/HoverCounterTwo';
+import User from './components/User';
+import CounterTwo from './components/CounterTwo';
+import ComponentC from './components/ComponentC';
+import { UserProvider } from './components/userContext';
 
 
 
@@ -112,9 +118,33 @@ class App extends Component  {
             <Hero heroName='Joker'/>
         </ErrorBoundary> */}
 
+ 
+        {/* <ClickCounter/>
+        <HoverCounter/> */}
 
-        <ClickCounter/>
-        <HoverCounter/>
+        {/* <ClickCounterTwo/>
+        <HoverCounterTwo/>  */}
+        {/* <User name = { (isLoggedIn) => isLoggedIn ? 'Sowmik' : 'Guest'}/> */}
+        {/* or */}
+        {/* <User render = { (isLoggedIn) => isLoggedIn ? 'Sowmik' : 'Guest'}/> */}
+
+        {/* <CounterTwo render = { (count, incrementCount) => (
+          <ClickCounterTwo count = {count} incrementCount = {incrementCount}/>
+        )} />
+
+        <CounterTwo render = { (count, incrementCount) => (
+          <HoverCounterTwo count = {count} incrementCount = {incrementCount}/>
+        )} /> */}
+
+
+
+        {/* <UserProvider value = "Sowmik">
+          <ComponentC/>
+        </UserProvider> */}
+    {/* or , see userContext  */}
+        <ComponentC/>
+        
+
 
 
       </div>
